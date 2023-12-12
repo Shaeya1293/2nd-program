@@ -1,0 +1,27 @@
+fork this repo
+git clone enter_the_url
+cd url_folder
+git init
+git branch
+touch first.txt
+echo "first">branch.txt
+git add first.txt
+git commit -m "first file in master branch"
+
+git checkout -b newbranch1
+echo "second" > first.txt
+cat first.txt => outputs "second"
+git add first.txt
+git commit -m "modified file in newbranch"
+git checkout master
+
+echo "third" > first.txt
+cat first.txt => outputs "third"
+git add first.txt
+git commit -m "changed content in master branch"
+
+git merge newbranch1
+git diff
+git log --merge
+git merge --abort
+cat first.txt => outputs "third"
